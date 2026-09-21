@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sure Plus Super Speciality Dental Clinic And Implant Center | Nagpur</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -626,6 +627,110 @@
             font-size: 13px;
             opacity: 0.7;
         }
+
+        /* ==========================================
+   MOBILE RESPONSIVE FIXES (Add to bottom of CSS)
+   ========================================== */
+
+/* Prevent horizontal overflow globally */
+body, html {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tablet Screens (Max width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .hero-container,
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .services-grid,
+    .gallery-grid,
+    .tech-grid,
+    .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Mobile Phones (Max width: 768px) */
+@media screen and (max-width: 768px) {
+    /* Hide top bar info or stack it to save space */
+    .top-bar {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+
+    /* Hide desktop nav links or stack them neatly */
+    .nav-links {
+        display: none; /* Tip: If you have a hamburger menu script, handle it here, otherwise keep primary CTA visible */
+    }
+
+    .navbar {
+        padding: 12px 20px;
+    }
+
+    /* Hero section text size adjustment */
+    .hero {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-btns a {
+        text-align: center;
+        justify-content: center;
+    }
+
+    /* Convert all multi-column grids to a single stacked column */
+    .feature-grid,
+    .services-grid,
+    .gallery-grid,
+    .tech-grid,
+    .reviews-grid,
+    .stats-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .section-header h2 {
+        font-size: 28px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
 
     </style>
 </head>
