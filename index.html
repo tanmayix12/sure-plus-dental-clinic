@@ -424,6 +424,90 @@
             font-weight: 600;
         }
 
+       /* Team of Excellence Section Styles */
+       /* Section Styling */
+.team-section {
+  background-color: #f8fafc; /* Adjust background if needed */
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.team-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Section Title */
+.team-title {
+  color: #1b4d3e; /* Deep green color */
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+/* Grid Layout */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Card Styling */
+.team-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 340px;
+  box-shadow: 0 15px 35px rgba(27, 77, 62, 0.08); /* Soft green-tinted shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(27, 77, 62, 0.12);
+}
+
+/* Circular Image Wrapper */
+.image-wrapper {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 25px auto;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #eaeaea; /* Fallback background */
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Typography */
+.doctor-name {
+  color: #111111;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.doctor-degree {
+  color: #333333;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 0 0 6px 0;
+}
+
+.doctor-specialty {
+  color: #555555;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
         /* Clinic Gallery Section */
         .gallery-section {
             padding: 90px 5%;
@@ -854,6 +938,46 @@ img {
             </div>
         </div>
     </section>
+
+  <section class="team-section">
+  <div class="team-container">
+    <h2 class="team-title">Our Team of Excellence</h2>
+    
+    <div class="team-grid">
+      <!-- Card 1: Dr. Ashish Maheshkar -->
+      <div class="team-card">
+        <div class="image-wrapper">
+          <img src="doc1.jpeg" alt="Dr. Ashish Maheshkar" />
+        </div>
+        <h3 class="doctor-name">Dr. Ashish Maheshkar</h3>
+        <p class="doctor-degree">BDS, MDS</p>
+        <p class="doctor-specialty">Oral & Maxillofacial Surgeon</p>
+      </div>
+
+      <!-- Card 2: Dr. Sagar Naidu -->
+      <div class="team-card">
+        <div class="image-wrapper">
+          <img src="doc2.jpeg" alt="Dr. Sagar Naidu" />
+        </div>
+        <h3 class="doctor-name">Dr. Sagar Naidu</h3>
+        <p class="doctor-degree">BDS, MDS</p>
+        <p class="doctor-specialty">Oral & Maxillofacial Surgeon</p>
+      </div>
+
+      <!-- Card 3: Dr. Pritam Khorgade -->
+      <div class="team-card">
+        <div class="image-wrapper">
+          <img src="doc3.jpeg" alt="Dr. Pritam Khorgade" />
+        </div>
+        <h3 class="doctor-name">Dr. Pritam Khorgade</h3>
+        <p class="doctor-degree">BDS, MDS</p>
+        <p class="doctor-specialty">Orthodontist</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
     <!-- Services / Specialities Section -->
     <section class="services-section" id="services">
